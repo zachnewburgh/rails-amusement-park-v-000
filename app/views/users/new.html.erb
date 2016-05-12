@@ -1,2 +1,31 @@
 <h1>Users#new</h1>
 <p>Find me in app/views/users/new.html.erb</p>
+
+<%= form_for :user, url: users_path do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+ 
+  <p>
+    <%= f.label :height %><br>
+    <%= f.number_field :height %>
+  </p>
+
+  <p>
+    <%= f.label :happiness %><br>
+    <%= f.number_field :happiness %>
+  </p>
+
+  <p>
+    <%= f.label :nausea %><br>
+    <%= f.number_field :nausea %>
+  </p>
+
+  <p>
+    <%= f.label :tickets %><br>
+    <%= f.number_field :tickets %>
+  </p>
+
+  <%= f.submit "Create User" %>
+<% end %>
