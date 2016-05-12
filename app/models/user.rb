@@ -1,3 +1,7 @@
 class User < ActiveRecord::Base
-  # write associations here
+  
+  def mood
+    happiness > nausea ? "happy" : "sad"
+  end
+  
 end
