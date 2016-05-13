@@ -4,5 +4,5 @@ Height: <%= @user.try(:height) %>
 Tickets: <%= @user.try(:tickets) %>
 Admin: <%= @user.try(:admin) == true ? "ADMIN" : "USER" %>
 
-<%= link_to "Attractions", attractions_path %>
+<%= link_to "See attractions", attractions_path %>
 <%= link_to "Log Out", signout_path, method: :delete %>
