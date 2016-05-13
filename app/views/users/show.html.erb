@@ -1,4 +1,5 @@
 <%= @user.name %>
-Mood: <%= @user.mood %>
-Height: <%= @user.height %>
-Tickets: <%= @user.tickets %>
+Mood: <%= @user.try(:mood) %>
+Height: <%= @user.try(:height) %>
+Tickets: <%= @user.try(:tickets) %>
+Admin: <%= @user.try(:admin) == true ? "ADMIN" : "USER" %>
