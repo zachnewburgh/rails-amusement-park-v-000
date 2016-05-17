@@ -1,3 +1,7 @@
+<% if flash[:notice] %>
+  <div class="notice"><%= flash[:notice] %></div>
+<% end %>
+
 <%= @user.name %>
 Mood: <%= @user.try(:mood) %>
 Height: <%= @user.try(:height) %>
